@@ -1,5 +1,5 @@
-import "./Hero.css";
-import "./Button.css";
+import "../styles/Hero.css";
+import "../styles/Button.css";
 import heroImage from "../assets/restauranfood.jpg";
 
 function Hero() {
@@ -17,7 +17,11 @@ function Hero() {
             Reserve a Table
           </a>
         </div>
-        <img className="hero__image" src={heroImage} alt="hero" />
+        <img
+          className="hero__image"
+          src={heroImage}
+          alt="Person holding dish with food."
+        />
       </div>
     </section>
   );

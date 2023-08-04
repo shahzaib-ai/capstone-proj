@@ -1,0 +1,38 @@
+.hero {
+  background-color: #4c5e57;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero h2,
+.hero p {
+  color: #edefee;
+}
+
+.hero p {
+  margin: 0 0 10% 0;
+}
+
+.hero h1 {
+  color: #efce00;
+}
+
+.hero__text {
+  max-width: 30%;
+  align-self: center;
+}
+
+.hero__image {
+  border-radius: 1rem;
+  max-height: 400px;
+  max-width: 200px;
+  height: 60%;
+  width: 20%;
+  object-fit: cover;
+  position: relative;
+  top: 2rem;
+}

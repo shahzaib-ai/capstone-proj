@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #edefee;
+  padding-bottom: 1.5rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  flex: 1;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__flex--span {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: end;
+  justify-content: start;
+  gap: 3%;
+}
+
+.card__m {
+  margin: 0 1rem 0 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
