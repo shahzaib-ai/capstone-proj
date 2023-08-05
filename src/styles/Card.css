@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+.card__price {
+  color: #ee9972;
+}
+
 .card__flex--span {
   display: grid;
   grid-template-columns: repeat(2, auto);

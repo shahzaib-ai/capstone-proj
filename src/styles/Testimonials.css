@@ -1,0 +1,17 @@
+.testimonials {
+  background-color: #fcf4ee;
+  padding: 6rem 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__title {
+  margin-bottom: 3rem;
+}
+
+.mini-cards {
+  display: flex;
+  gap: 1rem;
+}

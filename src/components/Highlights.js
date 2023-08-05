@@ -41,7 +41,7 @@ function Card({ card }) {
       <img src={card.src} alt={card.alt} className="card__image" />
       <div className="card__flex card__m">
         <h1>{card.title}</h1>
-        <span>${card.price}</span>
+        <span className="card__price">${card.price}</span>
       </div>
       <p className="card__m">{card.description}</p>
       <span className="card__m card__flex--span">

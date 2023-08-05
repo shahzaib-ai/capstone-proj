@@ -1,5 +1,5 @@
 .highlights {
-  margin-top: 3rem;
+  margin: 6rem 0;
 }
 
 .highlights__top {
@@ -12,5 +12,5 @@
   display: flex;
   justify-content: center;
   gap: 3%;
-  margin: 2rem 20vw;
+  margin: 2rem 23vw;
 }

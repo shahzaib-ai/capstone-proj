@@ -1,0 +1,11 @@
+.mini-card {
+  padding: 1.5rem;
+  background-color: #fff;
+  flex: 1;
+}
+
+.mini-card__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
