@@ -13,8 +13,12 @@
   color: #edefee;
 }
 
+.hero h1,
+.hero h2 {
+  margin-bottom: 3%;
+}
 .hero p {
-  margin: 0 0 10% 0;
+  margin-bottom: 10%;
 }
 
 .hero h1 {

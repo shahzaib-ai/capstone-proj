@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 5% 20% 2% 20%;
+  gap: 5%;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.about__images {
+  position: relative;
+  width: 70vw;
+  height: 30vw;
+  /* border: 2px solid brown; */
+}
+
+.about__images img {
+  width: 60%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.about__images--img {
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+
+.about__images--img2 {
+  position: absolute;
+  top: 23%;
+}
+
+.about h1 {
+  color: #f4ce14;
+}
+
+.about h2,
+.about p {
+  color: #333333;
+}
+
+.about h2 {
+  margin-bottom: 2.5rem;
+}
