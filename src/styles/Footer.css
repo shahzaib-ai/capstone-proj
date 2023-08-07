@@ -1,0 +1,35 @@
+footer {
+  /* border: 1px solid red; */
+  background-color: #182a24;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 2rem 0 3rem 0;
+}
+
+footer p,
+footer a {
+  color: #d9d9d9;
+}
+
+footer h1 {
+  margin-bottom: 1rem;
+}
+
+footer h1 {
+  color: white;
+}
+
+.footer__logo {
+  margin-top: 4rem;
+  width: 15%;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__sitemap {
+  display: flex;
+  flex-direction: column;
+}
