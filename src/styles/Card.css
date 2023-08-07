@@ -8,6 +8,40 @@
   flex: 1;
 }
 
+.card h1 {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #495e57;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.card__price {
+  color: #ee9972;
+}
+
+.card__flex--span {
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__price {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 1rem;
+}
+
 .card__image {
   width: 100%;
   height: auto;
@@ -21,10 +55,6 @@
   align-items: center;
 }
 
-.card__price {
-  color: #ee9972;
-}
-
 .card__flex--span {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -35,8 +65,4 @@
 
 .card__m {
   margin: 0.5rem 1rem 0 1rem;
-}
-
-.card p {
-  margin: 1rem;
 }

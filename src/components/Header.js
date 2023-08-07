@@ -13,13 +13,13 @@ function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#About">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#Menu">Menu</a>
+            <a href="#menu">Menu</a>
           </li>
           <li>
-            <a href="#Reservations">Reservations</a>
+            <a href="#reservations">Reservations</a>
           </li>
           <li>
             <a href="#order-online">Order online</a>

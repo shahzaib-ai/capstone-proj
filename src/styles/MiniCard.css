@@ -1,3 +1,18 @@
+.mini-card h1,
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 0.75rem;
+}
+
+.mini-card h1 {
+  font-weight: 700;
+}
+
+.mini-card p {
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
 .mini-card {
   padding: 1.5rem;
   background-color: #fff;

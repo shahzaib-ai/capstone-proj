@@ -24,7 +24,7 @@ function MiniCard({ minicard }) {
     <div className="mini-card">
       <span>⭐⭐⭐⭐</span>
       <div className="mini-card__container">
-        <RxAvatar size={48} />
+        <RxAvatar size={32} />
         <h1> {minicard.customerName} </h1>
       </div>
       <p>{minicard.description}</p>
