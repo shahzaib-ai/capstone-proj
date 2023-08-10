@@ -1,4 +1,23 @@
-function BookingForm() {
+import { useState } from "react";
+
+function BookingForm({ availableTimes, setAvailableTimes }) {
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState(availableTimes[0]);
+  const [guests, setGuests] = useState("1");
+  const [occasion, setOccasion] = useState("Birthday");
+  const clearForm = () => {
+    setDate("");
+    setTime(availableTimes[0]);
+    setGuests("1");
+    setOccasion("Birthday");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Your reservation has been made");
+    clearForm();
+  };
+
   return (
     <div
       style={{
@@ -9,22 +28,52 @@ function BookingForm() {
         alignItems: "center",
       }}
     >
-      <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
+      <form
+        style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
+        onSubmit={handleSubmit}
+      >
         <label htmlFor="res-date">Choose date</label>
-        <input type="date" id="res-date" />
+        <input
+          type="date"
+          id="res-date"
+          value={date}
+          onChange={(e) => {
+            setAvailableTimes({ date: e.target.value });
+            setDate(e.target.value);
+          }}
+        />
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time">
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+        <select
+          value={time}
+          onChange={(e) => {
+            setTime(e.target.value);
+          }}
+          id="res-time"
+        >
+          {availableTimes.map((time) => {
+            return <option key={time}>{time}</option>;
+          })}
         </select>
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder={1} min={1} max={10} id="guests" />
+        <input
+          value={guests}
+          onChange={(e) => {
+            setGuests(e.target.value);
+          }}
+          type="number"
+          placeholder={1}
+          min={1}
+          max={10}
+          id="guests"
+        />
         <label htmlFor="occasion">Occasion</label>
-        <select id="occasion">
+        <select
+          value={occasion}
+          onChange={(e) => {
+            setOccasion(e.target.value);
+          }}
+          id="occasion"
+        >
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
