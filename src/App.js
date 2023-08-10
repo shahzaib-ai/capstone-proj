@@ -6,6 +6,9 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import "./App.css";
 
+// for making form UI in your proj
+//  https://ui.shadcn.com/
+
 function App() {
   return (
     <>

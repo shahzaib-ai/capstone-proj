@@ -7,6 +7,7 @@ import { MdDeliveryDining } from "react-icons/md";
 import greeksalad from "../assets/greeksalad.jpg";
 import bruchetta from "../assets/bruchetta.svg";
 import lemondessert from "../assets/lemondessert.jpg";
+import { Link } from "react-router-dom";
 
 const cardData = [
   {
@@ -57,9 +58,9 @@ function Highlights() {
       <div className="highlights__top">
         <h1>This weeks specials!</h1>
         <div className="highlights__btn">
-          <a className="btn" href="#online-menu">
+          <Link className="btn" to="/online-menu">
             Online Menu
-          </a>
+          </Link>
         </div>
       </div>
       <div className="cards">
