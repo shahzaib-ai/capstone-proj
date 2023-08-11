@@ -5,7 +5,7 @@ import "../styles/Card.css";
 import { MdDeliveryDining } from "react-icons/md";
 
 import greeksalad from "../assets/greeksalad.jpg";
-import bruchetta from "../assets/bruchetta.svg";
+import bruchetta from "../assets/bruchetta.jpg";
 import lemondessert from "../assets/lemondessert.jpg";
 import { Link } from "react-router-dom";
 
