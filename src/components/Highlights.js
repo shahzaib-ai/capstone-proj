@@ -63,10 +63,12 @@ function Highlights() {
           </Link>
         </div>
       </div>
-      <div className="cards">
-        {cardData.map((card) => (
-          <Card card={card} key={card.src} />
-        ))}
+      <div className="cards-container">
+        <div className="cards">
+          {cardData.map((card) => (
+            <Card card={card} key={card.src} />
+          ))}
+        </div>
       </div>
     </section>
   );

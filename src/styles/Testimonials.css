@@ -1,6 +1,6 @@
 .testimonials {
   background-color: #fcf4ee;
-  padding: 6rem 14rem;
+  padding: 6rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,4 +18,17 @@
 .mini-cards {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .testimonials {
+    padding: 4rem 2rem;
+  }
+
+  .mini-cards {
+    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 2rem;
+  }
 }

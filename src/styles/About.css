@@ -60,3 +60,41 @@ h2 {
 .about p {
   color: #333333;
 }
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+    margin: 1rem 1rem 3rem 1rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about__images {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 80vw;
+    height: 30vw;
+    margin-top: 5%;
+    margin-bottom: 30%;
+    margin-left: 10%;
+  }
+
+  .about__images img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .about__images--img {
+    position: absolute;
+    z-index: 2;
+    left: 35%;
+  }
+
+  .about__images--img2 {
+    position: absolute;
+    top: 70%;
+  }
+}

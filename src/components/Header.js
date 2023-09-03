@@ -1,15 +1,26 @@
 import logo from "../assets/Logo.svg";
 import "../styles/Header.css";
 
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Link } from "react-router-dom";
 
 function Header() {
+  const mobNavHandler = () => {
+    const mainNav = document.querySelector(".main-nav");
+    mainNav.classList.toggle("main-nav--visible");
+  };
+
   return (
     <header>
       <div className="logo">
         <img src={logo} alt="Little Lemon logo" />
       </div>
-      <nav>
+      <div className="hamburger" onClick={mobNavHandler}>
+        <FontAwesomeIcon size="xl" icon={faBars} />
+      </div>
+      <nav className="main-nav">
         <ul>
           <li>
             <Link to="/">Home</Link>

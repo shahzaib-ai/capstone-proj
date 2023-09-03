@@ -13,3 +13,10 @@
   position: relative;
   left: 0.25rem;
 }
+
+@media (max-width: 900px) {
+  .btn {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+}

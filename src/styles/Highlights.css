@@ -1,5 +1,5 @@
 .highlights {
-  margin: 6rem 0;
+  margin: 6rem 0 1rem 0;
 }
 
 .highlights__top {
@@ -14,9 +14,44 @@
   font-size: 2.5rem;
 }
 
+.cards-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .cards {
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   gap: 3%;
-  margin: 2rem 23vw;
+  margin: 2rem 4rem;
+}
+
+@media (max-width: 900px) {
+  .highlights__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 1.5rem;
+  }
+
+  .highlights__top h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    width: 80%;
+    flex-direction: column;
+    margin: 3rem 1.5rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 500px) {
+  .cards {
+    max-width: 40%;
+    align-items: center;
+  }
 }

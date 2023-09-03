@@ -1,6 +1,9 @@
 footer {
   font-family: "Karla", sans-serif;
   background-color: #182a24;
+}
+
+.footer-container {
   display: flex;
   gap: 4rem;
   justify-content: center;
@@ -37,10 +40,23 @@ footer h1 {
 }
 
 .footer__logo img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer__sitemap {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .footer__logo {
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1.5rem;
+  }
 }

@@ -44,6 +44,10 @@
   align-self: center;
 }
 
+.hero__text p {
+  margin-bottom: 2rem;
+}
+
 .hero__image {
   border-radius: 1rem;
   max-height: 400px;
@@ -53,4 +57,22 @@
   object-fit: cover;
   position: relative;
   top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .hero__container {
+    flex-direction: column-reverse;
+  }
+
+  .hero__image {
+    margin-left: 5%;
+    align-self: center;
+    width: 100%;
+  }
+
+  .hero__text {
+    align-self: flex-start;
+    max-width: 100%;
+    margin: 1rem 1.5rem 2rem 1.5rem;
+  }
 }

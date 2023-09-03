@@ -30,3 +30,39 @@ header .logo {
   margin-right: 1rem;
   align-self: center;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav--visible {
+    display: inherit;
+  }
+
+  header .logo {
+    margin-right: 0;
+  }
+
+  .hamburger {
+    display: inherit;
+    margin: 1rem 0 1rem 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid #ffd500;
+    border-radius: 12px;
+  }
+
+  header ul {
+    margin-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
