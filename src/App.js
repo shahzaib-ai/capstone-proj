@@ -5,14 +5,11 @@ import Testimonials from "./components/Testimonials";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import "./App.css";
-import { useEffect } from "react";
 
 // for making form UI in your proj
 //  https://ui.shadcn.com/
 
 function App() {
-  useEffect(() => console.log(process.env.NODE_ENV), []);
-
   return (
     <div>
       <Header />
